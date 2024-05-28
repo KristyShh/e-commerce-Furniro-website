@@ -1,0 +1,62 @@
+.footer {
+    margin: 50px 200px 10px 200px;
+    .top {
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+        .item {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            color: gray;
+            font-size: 14px;
+            h3 {
+                font-size: 18px;
+                
+            }
+            .logo {
+                width: 150px;
+                height: 40px;
+                margin-bottom: 10px;
+            }
+            .socialmedia {
+                display: flex;
+                gap: 10px;
+                
+                img {
+                    width: 38px;
+                    height: 38px;
+                    gap : 20px;
+
+                    &:hover {
+                        cursor: pointer;
+                        transform: scale(1.2);
+                     background-color: #B88E2F;
+                    }
+                }
+            }
+
+}
+}
+
+    .bottom {
+        display: flex;
+        text-align: center;
+        font-size: 14px;
+        color: gray;
+        margin-top: 20px;
+        .copyright {
+            
+            font-size: 11px;
+        }
+    
+}
+.footline {
+    width: 100%;
+    height: 0.5px;
+    background-color: gray;
+    margin-top: 20px;
+    
+}
+
+}

@@ -1,0 +1,104 @@
+.navbar {
+    height: 80px;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2), 0px 0px 8px 0px rgba(0, 0, 0, 0.14);
+    .wrapper {
+        padding: 10px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .left {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 15px;
+            font-size: 18px;
+            font-family: 'Poppins-Medium', sans-serif;
+            font-weight: 700;
+            
+        }
+        .center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 25px;
+            font-size: 22px;
+            font-family: 'Poppins-Medium', sans-serif;
+            font-weight: 700;
+            cursor: pointer;
+
+            .item-page:hover {
+                color: #B88E2F;
+                text-shadow: #B88E2F 0px 0px 0px 3px;
+                transform: scale( 1.08 );
+                transition: 0.3s all ease;
+                
+                
+            }
+
+        }
+        .right {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 15px;
+            
+        
+        .icons {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 15px;
+            cursor: pointer;            
+            .item:hover {
+                filter:  invert(100%) contrast(200%) hue-rotate(180deg) drop-shadow(0px 1px 5px #db5e16);
+                transition: 0.3s all ease;
+            font-size: 25px;
+            }
+        
+            .cartIcon {
+                position: relative;
+                cursor: pointer;
+
+                
+                
+                span {
+                    font-size: 12px;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    background-color: #B88E2F;
+                    color: white;
+                    position: absolute;
+                    top: -10px;
+                    right: -10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+            
+                }
+            }
+
+        }
+
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .navbar {
+        .wrapper {
+            .left {
+                display: none;
+            }
+            .center {
+                display: none;
+            }
+            .right {
+                display: none;
+            }
+        }
+    }
+}
+

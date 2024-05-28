@@ -1,0 +1,45 @@
+.accordion {
+    border-bottom: 1px solid lightgrey;
+    
+    overflow: hidden;
+   
+
+    
+    .accordion-title {
+     
+      cursor: pointer;
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: bold;
+      
+      &.active {
+        background-color: #F9F1E7;
+      }
+      
+      .icon {
+        font-size: 20px;
+      }
+    }
+  
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+
+     
+
+      &.active {
+        max-height: 1000px; /* large value to ensure content is visible */
+     
+
+    }
+  
+      p {
+        padding: 15px;
+        margin: 0;
+        background-color: #fff;
+      }
+    }
+  }
