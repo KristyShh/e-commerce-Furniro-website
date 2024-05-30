@@ -4,15 +4,17 @@ import List from '../../components/ListProducts/ListProducts';
 import { useState } from 'react';
 import { useFetch } from '../../hooks/useFetch';
 import { ICard } from '../../types/types';
+import { SearchControl } from '../../components/SearchControl/SearchControl';
 
 export const Products = () => {
     const [category, setCategory] = useState<string[]>([]);
     const [maxPrice, setMaxprice] = useState("" );
     const [sort, setSort] = useState("");
     const [page, setCurrentPage] = useState(1);
-    const  queryParams = `category=${category}&sortby=price&order=${sort}&limit=6&page=${page}&price=${maxPrice}`  ;
+    const [value, setSearchParam] = useState("");
+    const  queryParams = `title=${value}&category=${category}&sortby=price&order=${sort}&limit=6&page=${page}&price=${maxPrice}`  ;
     const { response: products, error, loading } = useFetch<ICard>(`https://664b479fa300e8795d44f689.mockapi.io/products?${queryParams}`);
-
+console.log(products)
     const nextPage = () => {
         setCurrentPage(page + 1)
 
@@ -23,6 +25,7 @@ export const Products = () => {
    const handleCategoryChange = (category: string) => {
      setCategory(prev => prev.includes(category) ? prev.filter(item => item !== category) : [...prev, category]);
    };
+  
    
     return (
         <div className="products">
@@ -92,6 +95,9 @@ export const Products = () => {
                     <img className="catImg" src="../../../public/img/shopbcg 1.jpg" alt="home-background" />
                     <h2>Shop</h2>
                 </div>
+                <SearchControl onChange={(value) => setSearchParam(value)} 
+                 />
+              
                 {error ? <div>Error: {error.toString()}</div> : loading ? <div>Loading...</div> : (
                     <List products={products}  />
                 )}

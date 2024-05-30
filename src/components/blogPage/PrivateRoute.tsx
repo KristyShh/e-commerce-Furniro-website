@@ -8,6 +8,6 @@ export const PrivateRoute = () => {
     return auth.isAuth ? (
          <Outlet />
     ) : (
-         <Navigate to="/login" state={{ from: location }} replace/>
+         <Navigate to="/favorites" state={{ from: location }} replace/>
     );
 };

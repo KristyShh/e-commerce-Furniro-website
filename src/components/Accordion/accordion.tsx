@@ -7,8 +7,6 @@ const Accordion = ({title, content}: IAccordion) => {
  const [open, setOpen] = useState(false)
 
  const toggleAccordion = () => { setOpen (!open) };
-
-
     return (
         <div className="accordion">
 <div className={`accordion-title ${open ? 'active' : ''}`}
@@ -18,8 +16,7 @@ const Accordion = ({title, content}: IAccordion) => {
     </div>
     <div className={`accordion-content ${open ? 'active' : ''}`}>
     <p>{content}</p>
-    </div>
-            
+    </div>    
         </div>
     )
 }

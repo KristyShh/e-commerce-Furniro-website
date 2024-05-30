@@ -3,7 +3,6 @@ import './cart.scss'
 import { useAppDispatch, useAppSelector } from '../../hooks/useRedux'
 import { removeFromCart,  resetCart } from '../../redux toolkit/cart/slice'
 
-
 const Cart = () => {
     const products = useAppSelector(state => state.cart.cartProducts)
     const dispatch = useAppDispatch()
@@ -21,7 +20,6 @@ const Cart = () => {
             .toFixed(2);
     };
     return ( 
-       
         <div className = "cart">
             <h2>Products in your cart</h2>
             {products.map(item => (
@@ -33,12 +31,11 @@ const Cart = () => {
                     <div className="price">{item.quantity}
                         x ${item.price}
                     </div>
-                </div>
+                 </div>
                 <img className="delete" src="../../../public/img/delete.png" alt="" 
                 onClick={()=>dispatch(removeFromCart(item.id))}/>
              </div>
             ))}
-            
 <div className="total">
     <span>SUBTOTAL:</span>
     <span>${totalPrice()}</span>

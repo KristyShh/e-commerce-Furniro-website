@@ -34,10 +34,10 @@ const [currentSlide, setCurrentSlide] = useState(0)
             </div>
             <div className="icons">
                 <div className="icon" onClick={prevSlide}>
-                    <img src="./img/left.svg" alt="left" />
+                    <img src="./img/left.png" alt="left" />
                 </div>
                 <div className="icon" onClick={nextSlide}>
-                    <img  src="./img/Right16px.svg" alt="right" />
+                    <img  src="./img/right-arr.png" alt="right" />
             </div>
             </div>
 

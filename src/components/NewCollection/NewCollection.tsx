@@ -8,7 +8,7 @@ const NewCollection: React.FC<Itype> = ({ type }) => {
     
         const data: ICard[] = [
             {
-                id: '1',
+                id: '55',
                 img: "../../../public/img/new1.jpg",
                 img2: "../../../public/img/sofa.jpg",
                 title: 'Lorem ipms',
@@ -21,7 +21,7 @@ const NewCollection: React.FC<Itype> = ({ type }) => {
                 description : 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
             },
             {
-                id: '2',
+                id: '56',
                 img: "../../../public/img/new2.jpg",
                 img2: "../../../public/img/krszeslo.jpg",
                 title: 'Krzesło ogrodowe z drewna Malmö',
@@ -34,7 +34,7 @@ const NewCollection: React.FC<Itype> = ({ type }) => {
                 description : 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
             },
             {
-                id: '3',
+                id: '57',
                 img: "../../../public/img/new3.jpg",
                 img2: "../../../public/img/sofa2.jpg",
                 title: 'Sofa smart novo Lorem ipms',
@@ -47,7 +47,7 @@ const NewCollection: React.FC<Itype> = ({ type }) => {
                 description : 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
             },
             {
-                id: '4',
+                id: '58',
                 img: "../../../public/img/new4.jpg",
                 img2: "../../../public/img/talerze2.jpg",
                 title: 'Ręcznie wykonany talerz duży Scalloped',
@@ -59,7 +59,7 @@ const NewCollection: React.FC<Itype> = ({ type }) => {
                 category:'dinning',
             },
             {
-                id: '5',
+                id: '59',
                 img: "../../../public/img/stolik.jpg",
                 img2: "../../../public/img/stolik2.jpg",
                 title: 'Stolik kawowy Ilvi',

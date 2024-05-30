@@ -7,18 +7,17 @@ const Categories = () => {
     <>
         <h1>Browse The Range</h1>
         <div className="categories">
-                   
         <div className='column'>
             <div className="row">
                 <img src="./img/dinning.jpg" alt="dinning" />
             <button>
-                <Link className='link' to='/products/1'>Dinning</Link>
+                <Link className='link' to='/products'>Dinning</Link>
             </button>
             </div>
             <div className="row">
             <img src="./img/bedroom.jpg" alt="bedroom" />
             <button>
-                <Link className='link' to='/products/2'>Bedroom</Link>
+                <Link className='link' to='/products'>Bedroom</Link>
             </button>
             </div>
         </div>
@@ -26,7 +25,7 @@ const Categories = () => {
             <div className="row">
             <img src="./img/living.jpg" alt="livingroom" />
             <button>
-                <Link className='link' to='/products/3'>Living Room</Link>
+                <Link className='link' to='/products'>Living Room</Link>
             </button>
             </div>
             </div>
@@ -35,32 +34,26 @@ const Categories = () => {
                     <div className="column">
                         <div className="row"><img src="./img/kitchen.jpeg" alt="kitchen" />
             <button>
-                <Link className='link' to='/products/4'>Kitchen</Link>
+                <Link className='link' to='/products'>Kitchen</Link>
             </button>
             </div>
-
                     </div>
                     <div className="column">
                         <div className="row">
                             <img src="./img/kidsroom.jpeg" alt="kidsroom" />
             <button>
-                <Link className='link' to='/products/5'>Kids Room</Link>
+                <Link className='link' to='/products'>Kids Room</Link>
             </button></div>
                     </div>
                     </div>
                     <div className="row">
                         <img src="./img/bathroomM.jpg" alt="bath" />
             <button>
-                <Link className='link' to='/products/6'>Bathroom</Link>
+                <Link className='link' to='/products'>Bathroom</Link>
             </button>
-
                     </div>
-
                 </div>
-            
-
         </div>
-
     </>
 
     )

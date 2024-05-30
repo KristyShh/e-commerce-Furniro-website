@@ -96,12 +96,26 @@
             .links {
                 display: flex;
                 gap: 20px;
-                .item {
+                .item, button {
                     display: flex;
                     align-items: center;
                     gap: 10px;
                     color: black;
                     font-size: 18px;
+
+            }
+            button {
+                background-color: white;
+                border: none;
+                cursor: pointer;
+                &:hover {
+                    box-shadow: 0px 2px 0px 0px #B88E2F, 0px 10px 15px 0px #B88E2F;
+                    transform: scale(1.08);
+                    transition: 0.3s ease-in-out;
+                }
+
+            }
+
             }
         }
 
@@ -109,4 +123,4 @@
     }
    
    
-}
+

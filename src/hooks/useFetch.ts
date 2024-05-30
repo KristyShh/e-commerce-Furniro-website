@@ -16,7 +16,9 @@ const [response, setResponse] = useState<T[]>([])
    setResponse(response.data)
    
   } catch (error) {
-   setError(error)
+   console.log(error)
+
+   //setError(error)
   }
   setLoading(false)
 

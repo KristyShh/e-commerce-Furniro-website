@@ -24,16 +24,6 @@ export const LoginPage = () => {
         dispatch(setEmail(event.target.value));
     }
 
-   /* const onFormSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-        event.preventDefault();
-        if (Name && password && email) {
-            dispatch(setAuth( )); 
-            
-            navigate(path, { replace: true });
-        } else {
-            alert("Please fill all fields Name and Password, Email.");
-        }
-    };*/
     const onSubmitButton = (event: React.MouseEvent<HTMLButtonElement>) => {
         event.preventDefault();
         if (Name && password && email) {
@@ -72,7 +62,5 @@ export const LoginPage = () => {
                 </div>
             </form>
         </div>
-
-
     );
 };

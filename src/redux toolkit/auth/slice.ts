@@ -28,7 +28,6 @@ export const registrationFormSlice = createSlice({
             state.email = action.payload;
         },
         setAuth: (state) => {
-            // Проверяем, заполнены ли поля Name и password
             if (state.Name && state.password && state.email) {
                 state.isAuth = true;
             }

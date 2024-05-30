@@ -2,9 +2,7 @@
     border-bottom: 1px solid lightgrey;
     
     overflow: hidden;
-   
-
-    
+      
     .accordion-title {
      
       cursor: pointer;
@@ -28,12 +26,9 @@
       overflow: hidden;
       transition: max-height 0.3s ease;
 
-     
-
       &.active {
-        max-height: 1000px; /* large value to ensure content is visible */
-     
-
+        max-height: 1000px; 
+  
     }
   
       p {
