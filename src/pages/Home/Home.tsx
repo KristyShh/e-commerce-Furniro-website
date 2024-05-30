@@ -5,7 +5,7 @@ import Categories from '../../components/Categories/Categories'
 import NewCollection from '../../components/NewCollection/NewCollection'
 import Contact from '../../components/Contact/Contact'
 
-export const Home = () => {
+export const Home: React.FC = () => {
     return (
         <div className="home">
             <Slider />

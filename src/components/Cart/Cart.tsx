@@ -3,7 +3,7 @@ import './cart.scss'
 import { useAppDispatch, useAppSelector } from '../../hooks/useRedux'
 import { removeFromCart,  resetCart } from '../../redux toolkit/cart/slice'
 
-const Cart = () => {
+const Cart: React.FC = () => {
     const products = useAppSelector(state => state.cart.cartProducts)
     const dispatch = useAppDispatch()
     /*const totalPrice = ()=>{

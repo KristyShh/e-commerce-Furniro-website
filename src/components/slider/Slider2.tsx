@@ -1,4 +1,3 @@
-import image from '../../../public/img/home-background1.jpg'
 import "./slider.scss"
 import { useState } from 'react'
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import  { useState } from 'react'
 import './accordion.scss'
 import { IAccordion } from '../../types/types'
 

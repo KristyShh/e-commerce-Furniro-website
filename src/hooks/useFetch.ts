@@ -7,7 +7,7 @@ export const useFetch = <T>(url: string) => {
 
 const [response, setResponse] = useState<T[]>([])
  const [loading, setLoading] = useState<boolean>(false)
- const [error, setError] = useState<unknown>(null)
+ const error = ''
 
  const fetchData = useCallback( async () => {
   try {
@@ -17,8 +17,10 @@ const [response, setResponse] = useState<T[]>([])
    
   } catch (error) {
    console.log(error)
+  
 
-   //setError(error)
+
+   
   }
   setLoading(false)
 
